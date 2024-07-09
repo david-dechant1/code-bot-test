@@ -7,4 +7,5 @@
       ansible.builtin.service:
         name: httpd
         state: started
+      become: true
       become_user: apache # <- Does not change the user because "become: true" is not set.

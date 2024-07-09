@@ -3,5 +3,5 @@
   hosts: localhost
   tasks:
     - name: Echo a message
-      ansible.builtin.shell: echo hello # <-- command is better in this case
+      ansible.builtin.command: echo hello
       changed_when: false
