@@ -9,6 +9,6 @@
         uid: 1040
         group: admin
         password: "{{ item }}"
-      with_items:
-        - wow
       no_log: false # <- Sets the no_log attribute to false.
+      loop:
+        - wow
